@@ -1,0 +1,46 @@
+ <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>QuantumLeap AI - Revolutionizing the Future of Artificial Intelligence</title> <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&family=Exo+2:wght@400;700&display=swap" rel="stylesheet"> <style> :root { --primary-color: #00ffff; --secondary-color: #ff00ff; --background-color: #111; --text-color: #fff; --navbar-width: 250px; } * { box-sizing: border-box; margin: 0; padding: 0; } body { font-family: 'Roboto', sans-serif; background-color: var(--background-color); color: var(--text-color); line-height: 1.6; overflow-x: hidden; } .page-container { display: flex; } .navbar { width: var(--navbar-width); height: 100vh; position: fixed; background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color)); padding: 3rem 1.5rem; display: flex; flex-direction: column; align-items: center; justify-content: space-between; transition: transform 0.3s ease-in-out; z-index: 1000; } .navbar-logo { font-family: 'Exo 2', sans-serif; font-size: 1.8rem; font-weight: 700; text-align: center; margin-bottom: 3rem; } .navbar-links { list-style-type: none; width: 100%; } .navbar-links li { margin-bottom: 1.5rem; } .navbar-links a { font-family: 'Exo 2', sans-serif; color: var(--background-color); text-decoration: none; font-weight: 700; display: block; padding: 0.8rem 1.5rem; transition: background-color 0.3s ease; border-radius: 5px; } .navbar-links a:hover { background-color: rgba(255, 255, 255, 0.2); } .main-content { margin-left: var(--navbar-width); padding: 3rem; width: calc(100% - var(--navbar-width)); transition: margin-left 0.3s ease-in-out; } h1, h2, h3 { font-family: 'Orbitron', sans-serif; text-align: center; margin-bottom: 2.5rem; } p { margin-bottom: 1.5rem; } .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover; position: relative; overflow: hidden; margin-bottom: 5rem; padding: 3rem; } .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); } .hero-content { position: relative; z-index: 1; max-width: 800px; margin: 0 auto; } .hero h1 { font-size: 3.5rem; margin-bottom: 1.5rem; } .btn { display: inline-block; background-color: var(--primary-color); color: var(--background-color); padding: 1rem 2rem; border: none; border-radius: 30px; text-decoration: none; font-weight: 700; transition: background-color 0.3s ease, transform 0.3s ease; margin-top: 1.5rem; } .btn:hover { background-color: var(--secondary-color); transform: translateY(-3px); } .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 5rem; } .feature { background-color: rgba(255, 255, 255, 0.1); padding: 3rem; border-radius: 10px; text-align: center; transition: transform 0.3s ease; } .feature:hover { transform: translateY(-10px); } .feature img { width: 100px; height: 100px; margin-bottom: 2rem; } .cta-section { text-align: center; margin-top: 5rem; padding: 5rem 0; background-color: rgba(255, 255, 255, 0.05); } .menu-toggle { display: none; position: fixed; top: 1rem; right: 1rem; z-index: 1001; background: var(--primary-color); color: var(--background-color); border: none; padding: 0.5rem 1rem; font-size: 1.5rem; cursor: pointer; } @media screen and (max-width: 768px) { .page-container { flex-direction: column; } .navbar { transform: translateX(-100%); position: fixed; width: 100%; } .navbar.active { transform: translateX(0); } .main-content { margin-left: 0; width: 100%; padding: 1rem; } .menu-toggle { display: block; } .hero { padding: 2rem 1rem; } .hero h1 { font-size: 2.5rem; } .features { grid-template-columns: 1fr; } .feature { padding: 2rem 1rem; } .cta-section { padding: 3rem 1rem; } } </style> </head> <body> <div class="page-container"> <button class="menu-toggle">☰</button> <nav class="navbar"> <div class="navbar-logo">QuantumLeap AI</div> <ul class="navbar-links"> <li><a href="index.html">Home</a></li> <li><a href="products.html">Products</a></li> <li><a href="about.html">About</a></li> <li><a href="contact.html">Contact</a></li> </ul> </nav>
+text
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to the Future of AI</h1>
+                <p>Revolutionizing industries with quantum-powered artificial intelligence</p>
+                <a href="#" class="btn">Discover More</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <img src="https://via.placeholder.com/100" alt="Quantum AI Icon">
+                <h2>Quantum AI</h2>
+                <p>Harness the power of quantum computing for unprecedented AI capabilities. Our quantum algorithms process complex data at speeds unimaginable with classical computing.</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/100" alt="Machine Learning Icon">
+                <h2>Advanced ML</h2>
+                <p>State-of-the-art machine learning algorithms for complex problem-solving. Our neural networks adapt and learn from vast datasets, providing insights that drive innovation.</p>
+            </div>
+            <div class="feature">
+                <img src="https://via.placeholder.com/100" alt="Data Analysis Icon">
+                <h2>Data Insights</h2>
+                <p>Extract meaningful insights from vast amounts of data in real-time. Our AI-powered analytics tools help businesses make data-driven decisions with confidence.</p>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Transform Your Business?</h2>
+            <p>Experience the power of QuantumLeap AI and stay ahead of the competition.</p>
+            <a href="contact.html" class="btn">Get Started Today</a>
+        </section>
+    </main>
+</div>
+
+<script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navbar = document.querySelector('.navbar');
+    const mainContent = document.querySelector('.main-content');
+
+    menuToggle.addEventListener('click', () => {
+        navbar.classList.toggle('active');
+    });
+</script>
