@@ -171,148 +171,304 @@
             padding: 40px 0;
         }
         
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .footer-section {
-            flex: 1;
-            margin-right: 40px;
-        }
-        
-        .footer-section h3 {
-            color: var(--accent-color);
-            margin-bottom: 20px;
-        }
-        
-        .footer-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-section ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">VoltPro</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Our Services - VoltPro Electrical</title> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> <style> :root { --primary-color: #3498db; --secondary-color: #2c3e50; --accent-color: #e74c3c; --background-color: #ecf0f1; --text-color: #34495e; }
+text
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    header {
+        background-color: var(--primary-color);
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-text {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 20px;
+    }
+    
+    .logo-image {
+        height: 80px;
+        width: auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 30px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: var(--accent-color);
+    }
+    
+    .services-hero {
+        background-image: url('images/6.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+    }
+    
+    .services-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .services-hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .services-hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .service-list {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+    
+    .service-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 60px;
+    }
+    
+    .service-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    .service-image {
+        flex: 1;
+        margin-right: 40px;
+    }
+    
+    .service-item:nth-child(even) .service-image {
+        margin-right: 0;
+        margin-left: 40px;
+    }
+    
+    .service-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .service-details {
+        flex: 1;
+    }
+    
+    .service-details h2 {
+        color: var(--secondary-color);
+        margin-bottom: 20px;
+    }
+    
+    .cta-button {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: #fff;
+        padding: 12px 25px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: #c0392b;
+    }
+    
+    footer {
+        background-color: var(--secondary-color);
+        color: #fff;
+        padding: 40px 0;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin-right: 40px;
+    }
+    
+    .footer-section h3 {
+        color: var(--accent-color);
+        margin-bottom: 20px;
+    }
+    
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
 
-    <section class="services-hero">
-        <div class="services-hero-content">
-            <h1>Our Electrical Services</h1>
-            <p>Comprehensive solutions for all your electrical needs</p>
-        </div>
-    </section>
+</head> <body> <header> <div class="container header-content"> <div class="logo-container"> <div class="logo-text">VoltPro</div> <img src="images/Logo.png" alt="VoltPro Logo" class="logo-image"> </div> <nav> <ul> <li><a href="index.html">Home</a></li> <li><a href="services.html">Services</a></li> <li><a href="projects.html">Projects</a></li> <li><a href="about.html">About</a></li> <li><a href="contact.html">Contact</a></li> </ul> </nav> </div> </header>
 
-    <section class="service-list">
-        <div class="container">
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="residential-electrical-large.jpg" alt="Residential Electrical Services">
-                </div>
-                <div class="service-details">
-                    <h2>Residential Electrical Services</h2>
-                    <p>We offer a wide range of residential electrical services to keep your home safe and powered. Our services include:</p>
-                    <ul>
-                        <li>Electrical installations and upgrades</li>
-                        <li>Wiring and rewiring</li>
-                        <li>Lighting design and installation</li>
-                        <li>Home automation systems</li>
-                        <li>Electrical safety inspections</li>
-                    </ul>
-                    <a href="contact.html" class="cta-button">Request Service</a>
-                </div>
-            </div>
-            
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="commercial-electrical-large.jpg" alt="Commercial Electrical Services">
-                </div>
-                <div class="service-details">
-                    <h2>Commercial Electrical Services</h2>
-                    <p>Keep your business running smoothly with our expert commercial electrical services:</p>
-                    <ul>
-                        <li>Commercial wiring and installations</li>
-                        <li>Lighting retrofits and upgrades</li>
-                        <li>Power distribution systems</li>
-                        <li>Energy-efficient solutions</li>
-                        <li>Regular maintenance and repairs</li>
-                    </ul>
-                    <a href="contact.html" class="cta-button">Get a Quote</a>
-                </div>
-            </div>
-            
-            <div class="service-item">
-                <div class="service-image">
-                    <img src="emergency-electrical-large.jpg" alt="Emergency Electrical Services">
-                </div>
-                <div class="service-details">
-                    <h2>Emergency Electrical Services</h2>
-                    <p>We're here for you 24/7 with our emergency electrical services:</p>
-                    <ul>
-                        <li>Power outage troubleshooting</li>
-                        <li>Electrical fire safety</li>
-                        <li>Circuit breaker repairs</li>
-                        <li>Emergency lighting</li>
-                        <li>Rapid response team</li>
-                    </ul>
-                    <a href="tel:5551234567" class="cta-button">Call Now: (555) 123-4567</a>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="services-hero">
+    <div class="services-hero-content">
+        <h1>Our Electrical Services</h1>
+        <p>Comprehensive solutions for all your electrical needs</p>
+    </div>
+</section>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>123 Electric Avenue, Sparksville, EL 12345</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@voltproelectrical.com</p>
+<section class="service-list">
+    <div class="container">
+        <div class="service-item">
+            <div class="service-image">
+                <img src="images/7.jpg" alt="Residential Electrical Services">
             </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
+            <div class="service-details">
+                <h2>Residential Electrical Services</h2>
+                <p>We offer a wide range of residential electrical services to keep your home safe and powered. Our services include:</p>
                 <ul>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                    <li>Electrical installations and upgrades</li>
+                    <li>Wiring and rewiring</li>
+                    <li>Lighting design and installation</li>
+                    <li>Home automation systems</li>
+                    <li>Electrical safety inspections</li>
                 </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
+                <a href="contact.html" class="cta-button">Request Service</a>
             </div>
         </div>
-        <div class="container">
-            <p>&copy; 2024 VoltPro Electrical. All rights reserved.</p>
+        
+        <div class="service-item">
+            <div class="service-image">
+                <img src="images/8.jpg" alt="Commercial Electrical Services">
+            </div>
+            <div class="service-details">
+                <h2>Commercial Electrical Services</h2>
+                <p>Keep your business running smoothly with our expert commercial electrical services:</p>
+                <ul>
+                    <li>Commercial wiring and installations</li>
+                    <li>Lighting retrofits and upgrades</li>
+                    <li>Power distribution systems</li>
+                    <li>Energy-efficient solutions</li>
+                    <li>Regular maintenance and repairs</li>
+                </ul>
+                <a href="contact.html" class="cta-button">Get a Quote</a>
+            </div>
         </div>
-    </footer>
-</body>
-</html>
+        
+        <div class="service-item">
+            <div class="service-image">
+                <img src="images/9.jpg" alt="Emergency Electrical Services">
+            </div>
+            <div class="service-details">
+                <h2>Emergency Electrical Services</h2>
+                <p>We're here for you 24/7 with our emergency electrical services:</p>
+                <ul>
+                    <li>Power outage troubleshooting</li>
+                    <li>Electrical fire safety</li>
+                    <li>Circuit breaker repairs</li>
+                    <li>Emergency lighting</li>
+                    <li>Rapid response team</li>
+                </ul>
+                <a href="tel:5551234567" class="cta-button">Call Now: (555) 123-4567</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 Electric Avenue, Sparksville, EL 12345</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@voltproelectrical.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <p>&copy; 2024 VoltPro Electrical. All rights reserved.</p>
+    </div>
+</footer>
+
+</body> </html>

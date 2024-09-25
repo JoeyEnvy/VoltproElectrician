@@ -157,189 +157,331 @@
             transition: transform 0.3s ease;
         }
         
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-        
-        .service-content {
-            padding: 20px;
-        }
-        
-        .service-content h3 {
-            color: var(--secondary-color);
-            margin-bottom: 10px;
-        }
-        
-        .about-section {
-            padding: 80px 0;
-            background-color: var(--secondary-color);
-            color: #fff;
-        }
-        
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-        
-        .about-image {
-            flex: 1;
-        }
-        
-        .about-image img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        
-        .about-text {
-            flex: 1;
-        }
-        
-        .about-text h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        
-        footer {
-            background-color: var(--secondary-color);
-            color: #fff;
-            padding: 40px 0;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .footer-section {
-            flex: 1;
-            margin-right: 40px;
-        }
-        
-        .footer-section h3 {
-            color: var(--accent-color);
-            margin-bottom: 20px;
-        }
-        
-        .footer-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-section ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">VoltPro</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+      <!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>VoltPro Electrical | Expert Electrical Services</title> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> <style> :root { --primary-color: #3498db; --secondary-color: #2c3e50; --accent-color: #e74c3c; --background-color: #ecf0f1; --text-color: #34495e; }
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Expert Electrical Solutions</h1>
-            <p>Powering homes and businesses with reliable, safe electrical services</p>
-            <a href="contact.html" class="cta-button">Get a Free Quote</a>
-        </div>
-    </section>
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    header {
+        background-color: var(--primary-color);
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-text {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 20px;
+    }
+    
+    .logo-image {
+        height: 80px;
+        width: auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 30px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: var(--accent-color);
+    }
+    
+    .hero {
+        background-image: url('images/1.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+    }
+    
+    .hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .hero h1 {
+        font-size: 3.5em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero p {
+        font-size: 1.2em;
+        margin-bottom: 30px;
+    }
+    
+    .cta-button {
+        display: inline-block;
+        background-color: var(--accent-color);
+        color: #fff;
+        padding: 12px 25px;
+        text-decoration: none;
+        font-weight: 600;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    
+    .cta-button:hover {
+        background-color: #c0392b;
+    }
+    
+    .services {
+        padding: 80px 0;
+        background-color: #fff;
+    }
+    
+    .services h2 {
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 50px;
+        color: var(--secondary-color);
+    }
+    
+    .service-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 40px;
+    }
+    
+    .service-card {
+        background-color: var(--background-color);
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .service-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .service-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .service-content {
+        padding: 20px;
+    }
+    
+    .service-content h3 {
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+    }
+    
+    .about-section {
+        padding: 80px 0;
+        background-color: var(--secondary-color);
+        color: #fff;
+    }
+    
+    .about-content {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .about-image {
+        flex: 1;
+    }
+    
+    .about-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .about-text {
+        flex: 1;
+    }
+    
+    .about-text h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        background-color: var(--secondary-color);
+        color: #fff;
+        padding: 40px 0;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin-right: 40px;
+    }
+    
+    .footer-section h3 {
+        color: var(--accent-color);
+        margin-bottom: 20px;
+    }
+    
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
 
-    <section class="services">
-        <div class="container">
-            <h2>Our Services</h2>
-            <div class="service-grid">
-                <div class="service-card">
-                    <img src="residential-electrical.jpg" alt="Residential Electrical Services">
-                    <div class="service-content">
-                        <h3>Residential Services</h3>
-                        <p>Comprehensive electrical solutions for your home, from repairs to installations.</p>
-                    </div>
+</head> <body> <header> <div class="container header-content"> <div class="logo-container"> <div class="logo-text">VoltPro</div> <img src="images/Logo.png" alt="VoltPro Logo" class="logo-image"> </div> <nav> <ul> <li><a href="index.html">Home</a></li> <li><a href="services.html">Services</a></li> <li><a href="projects.html">Projects</a></li> <li><a href="about.html">About</a></li> <li><a href="contact.html">Contact</a></li> </ul> </nav> </div> </header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Expert Electrical Solutions</h1>
+        <p>Powering homes and businesses with reliable, safe electrical services</p>
+        <a href="contact.html" class="cta-button">Get a Free Quote</a>
+    </div>
+</section>
+
+<section class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="images/2.jpg" alt="Residential Electrical Services">
+                <div class="service-content">
+                    <h3>Residential Services</h3>
+                    <p>Comprehensive electrical solutions for your home, from repairs to installations.</p>
                 </div>
-                <div class="service-card">
-                    <img src="commercial-electrical.jpg" alt="Commercial Electrical Services">
-                    <div class="service-content">
-                        <h3>Commercial Services</h3>
-                        <p>Keeping your business powered with reliable and efficient electrical systems.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <img src="emergency-electrical.jpg" alt="Emergency Electrical Services">
-                    <div class="service-content">
-                        <h3>Emergency Services</h3>
-                        <p>24/7 emergency electrical repairs to keep you safe and powered.</p>
-                    </div>
+            </div>
+            <div class="service-card">
+                <img src="images/3.jpg" alt="Commercial Electrical Services">
+                <div class="service-content">
+                    <h3>Commercial Services</h3>
+                    <p>Keeping your business powered with reliable and efficient electrical systems.</p>
                 </div>
             </div>
+            <div class="service-card">
+                <img src="images/4.jpg" alt="Emergency Electrical Services">
+                <div class="service-content">
+                    <h3>Emergency Services</h3>
+                    <p>24/7 emergency electrical repairs to keep you safe and powered.</p>
+                </div>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="about-section">
-        <div class="container about-content">
-            <div class="about-image">
-                <img src="about-electrician.jpg" alt="Professional Electrician">
-            </div>
-            <div class="about-text">
-                <h2>About VoltPro Electrical</h2>
-                <p>With over 20 years of experience, VoltPro Electrical is your trusted partner for all electrical needs. Our team of certified electricians is committed to providing top-quality services, ensuring the safety and satisfaction of our clients.</p>
-                <p>From simple repairs to complex installations, we handle every project with professionalism and expertise.</p>
-                <a href="about.html" class="cta-button">Learn More About Us</a>
-            </div>
+<section class="about-section">
+    <div class="container about-content">
+        <div class="about-image">
+            <img src="images/5.jpg" alt="Professional Electrician">
         </div>
-    </section>
+        <div class="about-text">
+            <h2>About VoltPro Electrical</h2>
+            <p>With over 20 years of experience, VoltPro Electrical is your trusted partner for all electrical needs. Our team of certified electricians is committed to providing top-quality services, ensuring the safety and satisfaction of our clients.</p>
+            <p>From simple repairs to complex installations, we handle every project with professionalism and expertise.</p>
+            <a href="about.html" class="cta-button">Learn More About Us</a>
+        </div>
+    </div>
+</section>
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>123 Electric Avenue, Sparksville, EL 12345</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@voltproelectrical.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
-            </div>
+<footer>
+    <div class="container footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 Electric Avenue, Sparksville, EL 12345</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@voltproelectrical.com</p>
         </div>
-        <div class="container">
-            <p>&copy; 2024 VoltPro Electrical. All rights reserved.</p>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
         </div>
-    </footer>
-</body>
-</html>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <p>&copy; 2024 VoltPro Electrical. All rights reserved.</p>
+    </div>
+</footer>
+
+</body> </html>

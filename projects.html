@@ -1,287 +1,280 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Projects - VoltPro Electrical</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --primary-color: #3498db;
-            --secondary-color: #2c3e50;
-            --accent-color: #e74c3c;
-            --background-color: #ecf0f1;
-            --text-color: #34495e;
-        }
-        
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--background-color);
-            color: var(--text-color);
-            line-height: 1.6;
-        }
-        
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Montserrat', sans-serif;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        header {
-            background-color: var(--primary-color);
-            padding: 20px 0;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        
-        .header-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            font-size: 2.5em;
-            font-weight: 700;
-            color: #fff;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            color: #fff;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            font-size: 0.9em;
-            letter-spacing: 1px;
-            transition: color 0.3s ease;
-        }
-        
-        nav ul li a:hover {
-            color: var(--accent-color);
-        }
-        
-        .projects-hero {
-            background-image: url('projects-hero.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 400px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            color: #fff;
-            position: relative;
-        }
-        
-        .projects-hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
-        
-        .projects-hero-content {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .projects-hero h1 {
-            font-size: 3em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-        
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-            padding: 80px 0;
-        }
-        
-        .project-card {
-            background-color: #fff;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
-        }
-        
-        .project-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .project-card img {
-            width: 100%;
-            height: 250px;
-            object-fit: cover;
-        }
-        
-        .project-content {
-            padding: 20px;
-        }
-        
-        .project-content h3 {
-            color: var(--secondary-color);
-            margin-bottom: 10px;
-        }
-        
-        footer {
-            background-color: var(--secondary-color);
-            color: #fff;
-            padding: 40px 0;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-        
-        .footer-section {
-            flex: 1;
-            margin-right: 40px;
-        }
-        
-        .footer-section h3 {
-            color: var(--accent-color);
-            margin-bottom: 20px;
-        }
-        
-        .footer-section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        
-        .footer-section ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-section ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="container header-content">
-            <div class="logo">VoltPro</div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<!DOCTYPE html> 
 
-    <section class="projects-hero">
-        <div class="projects-hero-content">
-            <h1>Our Recent Projects</h1>
-            <p>Showcasing our expertise in electrical solutions</p>
-        </div>
-    </section>
+<html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-    <section class="project-grid">
-        <div class="container">
-            <div class="project-card">
-                <img src="project1.jpg" alt="Residential Rewiring">
-                <div class="project-content">
-                    <h3>Complete Home Rewiring</h3>
-                    <p>Full electrical system upgrade for a 3,000 sq ft home, including smart home integration.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project2.jpg" alt="Commercial Lighting">
-                <div class="project-content">
-                    <h3>Office Building Lighting Retrofit</h3>
-                    <p>Energy-efficient lighting upgrade for a 10-story office building, reducing energy costs by 40%.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project3.jpg" alt="Industrial Power Distribution">
-                <div class="project-content">
-                    <h3>Industrial Power Distribution</h3>
-                    <p>Design and installation of a comprehensive power distribution system for a large manufacturing plant.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project4.jpg" alt="Solar Panel Installation">
-                <div class="project-content">
-                    <h3>Residential Solar Panel Installation</h3>
-                    <p>Installation of a 10kW solar panel system, providing clean energy for a family home.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project5.jpg" alt="Emergency Backup System">
-                <div class="project-content">
-                    <h3>Hospital Emergency Backup System</h3>
-                    <p>Implementation of a robust emergency power system for a local hospital, ensuring uninterrupted operation.</p>
-                </div>
-            </div>
-            <div class="project-card">
-                <img src="project6.jpg" alt="EV Charging Station">
-                <div class="project-content">
-                    <h3>EV Charging Station Network</h3>
-                    <p>Installation of a network of EV charging stations for a large shopping center parking lot.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<title>Our Projects - VoltPro Electrical</title> 
 
-    <footer>
-        <div class="container footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>123 Electric Avenue, Sparksville, EL 12345</p>
-                <p>Phone: (555) 123-4567</p>
-                <p>Email: info@voltproelectrical.com</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">LinkedIn</a></li>
-                </ul>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"> 
+
+<style> 
+
+:root { --primary-color: #3498db; --secondary-color: #2c3e50; --accent-color: #e74c3c; --background-color: #ecf0f1; --text-color: #34495e; }
+
+    body {
+        font-family: 'Open Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: var(--background-color);
+        color: var(--text-color);
+        line-height: 1.6;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+    
+    header {
+        background-color: var(--primary-color);
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo-container {
+        display: flex;
+        align-items: center;
+    }
+    
+    .logo-text {
+        font-size: 2.5em;
+        font-weight: 700;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-right: 20px;
+    }
+    
+    .logo-image {
+        height: 80px;
+        width: auto;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        display: flex;
+    }
+    
+    nav ul li {
+        margin-left: 30px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 0.9em;
+        letter-spacing: 1px;
+        transition: color 0.3s ease;
+    }
+    
+    nav ul li a:hover {
+        color: var(--accent-color);
+    }
+    
+    .projects-hero {
+        background-image: url('images/16.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
+        position: relative;
+    }
+    
+    .projects-hero::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    
+    .projects-hero-content {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .projects-hero h1 {
+        font-size: 3em;
+        margin-bottom: 20px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    
+    .project-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        padding: 80px 0;
+    }
+    
+    .project-card {
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+    }
+    
+    .project-card:hover {
+        transform: translateY(-10px);
+    }
+    
+    .project-card img {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+    
+    .project-content {
+        padding: 20px;
+    }
+    
+    .project-content h3 {
+        color: var(--secondary-color);
+        margin-bottom: 10px;
+    }
+    
+    footer {
+        background-color: var(--secondary-color);
+        color: #fff;
+        padding: 40px 0;
+    }
+    
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .footer-section {
+        flex: 1;
+        margin-right: 40px;
+    }
+    
+    .footer-section h3 {
+        color: var(--accent-color);
+        margin-bottom: 20px;
+    }
+    
+    .footer-section ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    .footer-section ul li {
+        margin-bottom: 10px;
+    }
+    
+    .footer-section ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+</style>
+
+</head> <body> <header> <div class="container header-content"> <div class="logo-container"> <div class="logo-text">VoltPro</div> <img src="images/Logo.png" alt="VoltPro Logo" class="logo-image"> </div> <nav> <ul> <li><a href="index.html">Home</a></li> <li><a href="services.html">Services</a></li> <li><a href="projects.html">Projects</a></li> <li><a href="about.html">About</a></li> <li><a href="contact.html">Contact</a></li> </ul> </nav> </div> </header>
+
+<section class="projects-hero">
+    <div class="projects-hero-content">
+        <h1>Our Recent Projects</h1>
+        <p>Showcasing our expertise in electrical solutions</p>
+    </div>
+</section>
+
+<section class="project-grid">
+    <div class="container">
+        <div class="project-card">
+            <img src="images/E.jpg" alt="Residential Rewiring">
+            <div class="project-content">
+                <h3>Complete Home Rewiring</h3>
+                <p>Full electrical system upgrade for a 3,000 sq ft home, including smart home integration.</p>
             </div>
         </div>
-        <div class="container">
-            <p>&copy; 2024 VoltPro Electrical. All rights reserved.</p>
+        <div class="project-card">
+            <img src="images/F.jpg" alt="Commercial Lighting">
+            <div class="project-content">
+                <h3>Office Building Lighting Retrofit</h3>
+                <p>Energy-efficient lighting upgrade for a 10-story office building, reducing energy costs by 40%.</p>
+            </div>
         </div>
-    </footer>
-</body>
-</html>
+        <div class="project-card">
+            <img src="images/G.jpg" alt="Industrial Power Distribution">
+            <div class="project-content">
+                <h3>Industrial Power Distribution</h3>
+                <p>Design and installation of a comprehensive power distribution system for a large manufacturing plant.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images/H.jpg" alt="Solar Panel Installation">
+            <div class="project-content">
+                <h3>Residential Solar Panel Installation</h3>
+                <p>Installation of a 10kW solar panel system, providing clean energy for a family home.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images/I.jpg" alt="Emergency Backup System">
+            <div class="project-content">
+                <h3>Hospital Emergency Backup System</h3>
+                <p>Implementation of a robust emergency power system for a local hospital, ensuring uninterrupted operation.</p>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="images/J.jpg" alt="EV Charging Station">
+            <div class="project-content">
+                <h3>EV Charging Station Network</h3>
+                <p>Installation of a network of EV charging stations for a large shopping center parking lot.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container footer-content">
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>123 Electric Avenue, Sparksville, EL 12345</p>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: info@voltproelectrical.com</p>
+        </div>
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <p>&copy; 2024 VoltPro Electrical. All rights reserved.</p>
+    </div>
+</footer>
+
+</body> </html>
